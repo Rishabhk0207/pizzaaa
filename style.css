@@ -1,0 +1,479 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Ruda:wght@400..900&display=swap");
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* nav section-->>>> */
+
+.header {
+  width: 100vw;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.nav {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  height: 5rem;
+  font-family: "Ruda", sans-serif;
+  flex-wrap: wrap;
+}
+.nav > h1 {
+  font-size: 25px;
+  font-weight: 550;
+  letter-spacing: 0.06em;
+  margin-left: 3rem;
+}
+.nav-ul {
+  display: flex;
+  gap: 40px;
+  width: 60%;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.list > a {
+  color: white;
+  text-decoration: none;
+}
+.nav-logos {
+  height: 3rem;
+  display: flex;
+  gap:20px;
+}
+.nav-logos > a > i {
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-logos>a{
+  width: 50px;
+}
+
+.nav > h1:hover {
+  border-bottom: 3px solid blue;
+}
+.list > a:hover {
+  border-bottom: 3px solid blue;
+}
+.nav-logos > a:hover {
+  border: 3px solid blue;
+}
+
+/* hero section-->> */
+
+.hero-section {
+  width: 100vw;
+  height: 90vh;
+  background-image: url(https://img.freepik.com/premium-photo/hand-is-grabbing-slice-pepperoni-pizza_855944-169.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 3px 6px 18px 0px #00000040;
+}
+
+.hero-section-text {
+  padding-top: 5%;
+  padding-left: 10%;
+  width: 60%;
+}
+
+.h1 {
+  color: white;
+  font-family: "Quattrocento", serif;
+  font-size: 6rem;
+  font-weight: 600;
+}
+
+.h1 > hr {
+  margin-top: 50px;
+  width: 80%;
+  height: 0.5rem;
+  background-color: red;
+  border: none;
+  box-shadow: 3px 6px 18px 0px #00000040;
+}
+.p {
+  margin-top: 50px;
+  width: 80%;
+  font-family: Ruda;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.09em;
+  text-align: left;
+  color: white;
+}
+
+/* about section--> */
+
+main {
+  background-color: black;
+  color: white;
+  padding: 4rem 2rem 2rem 2rem;
+}
+
+.about-sec {
+  width: 100%;
+}
+
+.head {
+  font-size: 2.5rem;
+  font-family: "Quattrocento", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.head > hr {
+  width: 30%;
+  background-color: red;
+  height: 0.5rem;
+  border: none;
+  margin-top: 1rem;
+}
+
+.about-sec-body {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem;
+  justify-content: space-around;
+}
+.left-sec {
+  width: 450px;
+}
+.left-sec > hr {
+  width: 80%;
+  background-color: red;
+  height: 0.1rem;
+  border: none;
+}
+.left-sec > p {
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0.09em;
+  text-align: left;
+}
+.right-sec {
+  width: 450px;
+  border-radius: 10px;
+}
+.right-sec > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* menu-sec-->> */
+
+.menu-p {
+  padding: 3rem;
+}
+.menu-p > p {
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.09em;
+  text-align: left;
+}
+.menu-items {
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem;
+  flex-wrap: wrap;
+}
+.box {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.box > img {
+  width: 300px;
+  height: 260px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.img-text {
+  width: 300px;
+  height: auto;
+}
+.img-text > span {
+  font-family: "Ruda", sans-serif;
+  font-size: 28px;
+  font-weight: 200;
+  text-align: left;
+  color: #f2c94c;
+}
+.img-text > p {
+  font-family: Ruda, sans-serif;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.09em;
+  text-align: left;
+}
+
+/* carousel--> */
+
+.slide {
+  width: 100%;
+  position: relative;
+  padding: 3rem;
+}
+
+.left,
+.right {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-size: 60px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.right {
+  right: 0px;
+  border-radius: 3px 0 0 3px;
+}
+
+.slide-img {
+  width: 80%;
+  margin: auto;
+  display: none;
+}
+.slide-img > img {
+  width: 100%;
+  height: 40rem;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.left:hover,
+.right:hover {
+  border: 3px solid blue;
+}
+.dot {
+  cursor: pointer;
+  height: 0.7rem;
+  width: 0.7rem;
+  margin: 1rem 0.1rem;
+  background-color: rgb(95, 95, 95);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+  background-color: white;
+}
+.slide-img {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* gallary--> */
+
+.main-gallary {
+  width: 80%;
+  padding: 3rem;
+  margin: 0 auto;
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    "a a b c"
+    "a a d e"
+    "a a f e";
+}
+
+.one {
+  grid-area: a;
+}
+.one > img,
+.two > img,
+.three > img,
+.four > img,
+.five > img,
+.six > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.six {
+  grid-area: e;
+}
+.three {
+  grid-area: d;
+}
+.five {
+  grid-area: c;
+}
+
+/* find us--> */
+.find-main {
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.find-left {
+  width: 30rem;
+}
+.para {
+  font-family: "Ruda", sans-serif;
+  line-height: 30px;
+  letter-spacing: 0.09em;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.info-one {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+.info-two {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.googleMap {
+  width: 30rem;
+  height: 20rem;
+}
+.googleMap > iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* footer--> */
+footer {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.man {
+  background-image: url(Screenshot\ 2024-04-09\ at\ 10.11.16\ PM.png);
+  background-size: cover;
+  background-position: center;
+  width: 200px;
+  height: 200px;
+}
+.info-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* media query-->> */
+
+@media screen and (max-width: 600px) {
+  .header {
+    position: static;
+  }
+
+  .nav {
+    flex-direction: column;
+    height: 450px;
+    justify-content: flex-start;
+    padding-top: 20px;
+    gap: 30px;
+  }
+  .nav > h1 {
+    margin-left: 0px;
+  }
+  .nav-ul {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  .nav-logos {
+    width: 3rem;
+    flex-direction: column;
+  }
+
+  .hero-section {
+    height: 100%;
+    top: 28rem;
+    overflow-x: hidden;
+  }
+  .hero-section-text {
+    position: relative;
+    top: 5rem;
+    left: 3rem;
+    width: auto;
+    height: 30rem;
+  }
+  .h1 {
+    font-size: 1.5em;
+    width: 80%;
+  }
+  .h1 > hr {
+    margin-top: 2rem;
+  }
+  .p {
+    margin-top: 1rem;
+  }
+  .left-sec {
+    margin-bottom: 30px;
+  }
+  .left-sec > hr {
+    width: auto;
+  }
+  .left-sec > p {
+    width: auto;
+    text-align: center;
+  }
+  .img-text > p {
+    text-align: center;
+  }
+  .menu-items {
+    text-align: center;
+  }
+  .slide-img > img {
+    object-fit: cover;
+    height: 10rem;
+    width: auto;
+  }
+  .left,
+  .right {
+    top: 30%;
+    font-size: 40px;
+  }
+}
